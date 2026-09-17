@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="fa" dir="rtl">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Fiend — Control Panel</title>
+  <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+  <main class="wrap">
+    <header>
+      <div>
+        <div class="eyebrow">CLASSROOM LAB</div>
+        <h1>Fiend Control Panel</h1>
+        <p>پنل  ارتباط با برنامه</p>
+      </div>
+      <span id="status" class="status offline">OFFLINE</span>
+    </header>
+
+    <section class="grid">
+      <article class="card">
+        <h2>وضعیت اتصال</h2>
+        <div id="connection">در حال بررسی...</div>
+        <button id="connect">اتصال WebSocket</button>
+      </article>
+
+      <article class="card">
+        <h2>ارسال متن </h2>
+        <textarea id="text" placeholder="متن  را وارد کنید"></textarea>
+        <button id="sendText">ارسال</button>
+      </article>
+
+      <article class="card">
+        <h2>موقعیت </h2>
+        <div class="row">
+          <input id="lat" placeholder="Latitude">
+          <input id="lon" placeholder="Longitude">
+        </div>
+        <button id="sendLocation">ارسال موقعیت </button>
+      </article>
+
+      <article class="card log">
+        <h2>لاگ</h2>
+        <pre id="log"></pre>
+      </article>
+    </section>
+  </main>
+  <script src="/app.js"></script>
+</body>
+  </html>
